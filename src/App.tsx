@@ -1,16 +1,11 @@
+import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
 
-function handleClick(item: string) {
-  console.log(item);
-}
-
 function App() {
-  let items = ["Leh", "Ladakh", "Shimla", "Manali", "Shillong"];
-
   return (
-    <div>
-      <ListGroup items={items} heading="Cities" onSelectItem={handleClick} />
-    </div>
+    <Alert>
+      Harsit <span style={{ color: "red" }}>Agarwalla</span>
+    </Alert>
   );
 }
 
