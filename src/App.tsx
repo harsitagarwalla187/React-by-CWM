@@ -1,11 +1,19 @@
+import { useState } from "react";
 import Alert from "./components/Alert";
-import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
 
 function App() {
+  const [alertVisible, setAlertVisible] = useState(false);
+
   return (
-    <Alert>
-      Harsit <span style={{ color: "red" }}>Agarwalla</span>
-    </Alert>
+    <>
+      {alertVisible && (
+        <Alert onClose={() => setAlertVisible(false)}>Error!</Alert>
+      )}
+      <Button color="secondary" onClick={() => setAlertVisible(true)}>
+        My Button
+      </Button>
+    </>
   );
 }
 
