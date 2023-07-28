@@ -1,13 +1,12 @@
-import ListGroup from "./components/ListGroup";
-import "./App.css";
+import { DiApple } from "react-icons/di";
 
 function App() {
-  const items = ["Leh", "Ladakh", "Shillong", "Manali"];
-
   return (
-    <>
-      <ListGroup items={items} heading="Cities" />
-    </>
+    <h1>
+      {" "}
+      Apple Logo
+      <DiApple color="grey" size="50" />
+    </h1>
   );
 }
 
