@@ -27,7 +27,7 @@ const Form = () => {
           Name
         </label>
         <input
-          {...register("name", { required: true, minLength: 3 })}
+          {...register("name", { required: true })}
           id="name"
           type="text"
           className="form-control"
